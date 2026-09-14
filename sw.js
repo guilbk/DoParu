@@ -1,5 +1,5 @@
-/* DoParu service worker · build ca06e1e3 · офлайн після першого відкриття */
-const C = "doparu-ca06e1e3";
+/* DoParu service worker · build eaf6fe44 · офлайн після першого відкриття */
+const C = "doparu-eaf6fe44";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
