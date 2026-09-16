@@ -1,6 +1,6 @@
-/* DoParu service worker · build be1fcd16 · офлайн після першого відкриття */
-const C = "doparu-be1fcd16";
-const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./data/core.js?b=be1fcd16", "./data/cs101.js?b=be1fcd16", "./data/cs101.2.js?b=be1fcd16", "./data/cs101.3.js?b=be1fcd16", "./data/cs201.js?b=be1fcd16", "./data/cs201.2.js?b=be1fcd16", "./data/cs201.3.js?b=be1fcd16", "./data/math101.js?b=be1fcd16", "./data/math101.2.js?b=be1fcd16", "./data/math101.3.js?b=be1fcd16", "./data/math115.js?b=be1fcd16", "./data/math115.2.js?b=be1fcd16", "./data/math115.3.js?b=be1fcd16"];
+/* DoParu service worker · build 9d2c7f5e · офлайн після першого відкриття */
+const C = "doparu-9d2c7f5e";
+const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./data/core.js?b=9d2c7f5e", "./data/cs101.js?b=9d2c7f5e", "./data/cs101.2.js?b=9d2c7f5e", "./data/cs101.3.js?b=9d2c7f5e", "./data/cs201.js?b=9d2c7f5e", "./data/cs201.2.js?b=9d2c7f5e", "./data/cs201.3.js?b=9d2c7f5e", "./data/math101.js?b=9d2c7f5e", "./data/math101.2.js?b=9d2c7f5e", "./data/math101.3.js?b=9d2c7f5e", "./data/math115.js?b=9d2c7f5e", "./data/math115.2.js?b=9d2c7f5e", "./data/math115.3.js?b=9d2c7f5e"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener("fetch", e => {
