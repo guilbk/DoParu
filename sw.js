@@ -1,6 +1,6 @@
-/* DoParu service worker · build 21ffd45c · офлайн після першого відкриття */
-const C = "doparu-21ffd45c";
-const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./data/core.js?b=21ffd45c", "./data/cs101.js?b=21ffd45c", "./data/cs101.2.js?b=21ffd45c", "./data/cs101.3.js?b=21ffd45c", "./data/cs201.js?b=21ffd45c", "./data/cs201.2.js?b=21ffd45c", "./data/cs201.3.js?b=21ffd45c", "./data/math101.js?b=21ffd45c", "./data/math101.2.js?b=21ffd45c", "./data/math101.3.js?b=21ffd45c", "./data/math115.js?b=21ffd45c", "./data/math115.2.js?b=21ffd45c", "./data/math115.3.js?b=21ffd45c"];
+/* DoParu service worker · build 7bd0263e · офлайн після першого відкриття */
+const C = "doparu-7bd0263e";
+const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./data/core.js?b=7bd0263e", "./data/cs101.js?b=7bd0263e", "./data/cs101.2.js?b=7bd0263e", "./data/cs101.3.js?b=7bd0263e", "./data/cs201.js?b=7bd0263e", "./data/cs201.2.js?b=7bd0263e", "./data/cs201.3.js?b=7bd0263e", "./data/math101.js?b=7bd0263e", "./data/math101.2.js?b=7bd0263e", "./data/math101.3.js?b=7bd0263e", "./data/math115.js?b=7bd0263e", "./data/math115.2.js?b=7bd0263e", "./data/math115.3.js?b=7bd0263e"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener("fetch", e => {
