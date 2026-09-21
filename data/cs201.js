@@ -1,1 +1,1 @@
-window.DATA.courses["cs201"]={"course":{"id":"cs201","moodle_id":4361,"title":"Основи програмування","short":"CS201","status":"заглушка — пакет буде пізніше; інвентар у index/cs201.md","task_type":"code"},"theory":[],"concepts":[],"pics":{}};
+window.DATA.courses["cs201"]={"course":{"id":"cs201","moodle_id":4361,"title":"Основи програмування","short":"CS201","status":"заглушка — пакет буде пізніше; інвентар у index/cs201.md","task_type":"code"},"theory":[],"concepts":[]};

@@ -1,0 +1,1 @@
+Object.assign(window.DATA.courses["cs201"],{"pics":{}});

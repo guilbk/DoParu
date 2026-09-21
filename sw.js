@@ -1,6 +1,6 @@
-/* DoParu service worker · build c4714efd · офлайн після першого відкриття */
-const C = "doparu-c4714efd";
-const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./data/core.js?b=c4714efd", "./data/cs101.js?b=c4714efd", "./data/cs101.2.js?b=c4714efd", "./data/cs101.3.js?b=c4714efd", "./data/cs201.js?b=c4714efd", "./data/cs201.2.js?b=c4714efd", "./data/cs201.3.js?b=c4714efd", "./data/math101.js?b=c4714efd", "./data/math101.2.js?b=c4714efd", "./data/math101.3.js?b=c4714efd", "./data/math115.js?b=c4714efd", "./data/math115.2.js?b=c4714efd", "./data/math115.3.js?b=c4714efd"];
+/* DoParu service worker · build 620e7ece · офлайн після першого відкриття */
+const C = "doparu-620e7ece";
+const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./data/core.js?b=620e7ece", "./data/bio101.js?b=620e7ece", "./data/bio101.2.js?b=620e7ece", "./data/bio101.3.js?b=620e7ece", "./data/bio101.4.js?b=620e7ece", "./data/cs101.js?b=620e7ece", "./data/cs101.2.js?b=620e7ece", "./data/cs101.3.js?b=620e7ece", "./data/cs101.4.js?b=620e7ece", "./data/cs201.js?b=620e7ece", "./data/cs201.2.js?b=620e7ece", "./data/cs201.3.js?b=620e7ece", "./data/cs201.4.js?b=620e7ece", "./data/math101.js?b=620e7ece", "./data/math101.2.js?b=620e7ece", "./data/math101.3.js?b=620e7ece", "./data/math101.4.js?b=620e7ece", "./data/math115.js?b=620e7ece", "./data/math115.2.js?b=620e7ece", "./data/math115.3.js?b=620e7ece", "./data/math115.4.js?b=620e7ece"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener("fetch", e => {
